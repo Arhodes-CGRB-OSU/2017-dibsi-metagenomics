@@ -241,6 +241,7 @@ grep ">" binned.concat.fasta |cut -f2 -d ' '>> megahit_annotation.list
 --
 MetaBAT uses read coverage as well as **coverage variance** for each contig. This is done with a custom script
 ```
+cd ~/mapping
 ~/metabat/jgi_summarize_bam_contig_depths --outputDepth depth_var.txt *sorted.bam
 ```
 Setup another "binning" directory for this tool's results
